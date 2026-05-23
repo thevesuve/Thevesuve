@@ -1,1 +1,17 @@
-const b=document.querySelector('[data-menu-button]');const m=document.querySelector('[data-mobile-menu]');if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',String(o));b.textContent=o?'×':'☰'});m.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded','false');b.textContent='☰'}));}
+
+const button = document.querySelector('[data-menu-button]');
+const menu = document.querySelector('[data-mobile-menu]');
+if (button && menu) {
+  button.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    button.textContent = open ? '×' : '☰';
+    button.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('open');
+      button.textContent = '☰';
+      button.setAttribute('aria-expanded', 'false');
+    });
+  });
+}

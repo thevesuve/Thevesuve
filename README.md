@@ -1,5 +1,3 @@
-# The Vesuve Website V2
+# The Vesuve V3
 
-Cleaner mobile-first luxury version.
-
-Upload all files and the assets folder to GitHub.
+Premium mobile-first website. Images are in the root folder, no assets folder needed.
