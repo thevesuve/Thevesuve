@@ -1,0 +1,44 @@
+
+:root{
+  --black:#050505; --black2:#0b0a08; --gold:#c89b43; --gold2:#f2d18a;
+  --cream:#f7efe0; --muted:#b9aa92; --line:rgba(200,155,67,.28);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--black);color:var(--cream);font-family:Inter,Arial,sans-serif;letter-spacing:.04em}
+a{text-decoration:none;color:inherit}
+.page{min-height:100vh;background:radial-gradient(circle at 70% 25%,rgba(201,139,54,.18),transparent 28%),linear-gradient(135deg,#020202,#0b0a08 55%,#020202)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:20;height:82px;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;background:linear-gradient(to bottom,rgba(0,0,0,.85),rgba(0,0,0,.25));backdrop-filter:blur(10px);border-bottom:1px solid rgba(200,155,67,.10)}
+.logo{display:flex;align-items:center;gap:14px;color:var(--gold2)}
+.logo-mark{font-family:Georgia,serif;font-size:28px;line-height:1;border:1px solid var(--line);padding:5px 9px;color:var(--gold2)}
+.logo-text{font-size:15px;letter-spacing:.28em}
+.nav-links{display:flex;gap:34px;align-items:center;font-size:12px;text-transform:uppercase;color:#e7ddc9}
+.nav-links a{opacity:.82}.nav-links a:hover{color:var(--gold2);opacity:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:48px;padding:0 28px;border:1px solid var(--gold);color:var(--gold2);background:rgba(0,0,0,.32);text-transform:uppercase;font-size:12px;letter-spacing:.18em}
+.btn.fill{background:linear-gradient(135deg,#9d7430,#d9ad5c);color:#070707;border:none}.btn:hover{transform:translateY(-1px);box-shadow:0 0 30px rgba(200,155,67,.18)}
+.menu{display:none;font-size:28px;color:var(--gold2)}
+.hero{min-height:100vh;padding:130px 7vw 60px;display:grid;grid-template-columns:1fr 1.1fr;align-items:center;gap:40px}
+.kicker{font-size:12px;text-transform:uppercase;color:var(--gold2);letter-spacing:.34em;margin-bottom:28px}
+h1{margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(54px,8vw,128px);font-weight:400;line-height:.86;letter-spacing:.16em}
+.subtitle{font-size:13px;text-transform:uppercase;letter-spacing:.42em;margin:26px 0;color:#f3ead7}
+.tagline{font-family:'Cormorant Garamond',Georgia,serif;color:var(--gold2);font-size:clamp(24px,3vw,38px);font-style:italic;letter-spacing:.03em;margin:34px 0}
+.hero-v{position:relative;height:min(64vh,620px);min-height:430px;display:flex;align-items:center;justify-content:center}
+.v-stone{position:absolute;inset:7% 0;background:radial-gradient(circle at 52% 62%,rgba(255,190,79,.24),transparent 20%),linear-gradient(135deg,#0b0b0b,#1b160f 55%,#050505);clip-path:polygon(17% 0,47% 0,57% 75%,85% 0,100% 0,62% 100%,48% 100%);box-shadow:0 0 90px rgba(211,151,61,.25),inset 0 0 60px rgba(255,205,108,.16);filter:drop-shadow(0 0 24px rgba(213,153,58,.55))}
+.v-glow{position:absolute;bottom:12%;width:50%;height:7px;background:var(--gold2);filter:blur(14px);opacity:.8}
+.hero-card{position:absolute;inset:auto 6% 6% auto;width:58%;height:72%;border:1px solid rgba(200,155,67,.13);background:radial-gradient(circle at 40% 40%,rgba(255,185,70,.08),transparent 35%)}
+.section{min-height:100vh;padding:120px 7vw;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;border-top:1px solid var(--line)}
+.section h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(38px,5vw,78px);line-height:.95;font-weight:400;letter-spacing:.12em;margin:0 0 26px}
+.gold{color:var(--gold2)}.copy{font-size:17px;line-height:1.8;letter-spacing:.02em;color:#d3c7b6;max-width:560px}
+.visual{min-height:480px;border:1px solid rgba(200,155,67,.18);background:linear-gradient(135deg,#090806,#1a120a,#050505);position:relative;overflow:hidden}
+.visual:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 60% 35%,rgba(255,165,55,.28),transparent 18%),linear-gradient(115deg,transparent 0 44%,rgba(255,194,91,.2) 45%,transparent 47%)}
+.visual.hands:after{content:"";position:absolute;left:8%;right:8%;bottom:18%;height:38%;border-radius:50% 50% 20% 20%;background:radial-gradient(ellipse at center,#8d5226,#2c170e 70%,transparent 73%);box-shadow:0 -25px 70px rgba(255,158,58,.25)}
+.visual.room:before{background:linear-gradient(to right,rgba(0,0,0,.2),rgba(0,0,0,.75)),radial-gradient(circle at 72% 45%,rgba(255,172,64,.32),transparent 18%),linear-gradient(90deg,transparent 0 50%,rgba(201,155,67,.28) 50% 51%,transparent 52%),linear-gradient(135deg,#060504,#1b130c,#050505)}
+.visual.room:after{content:"";position:absolute;left:10%;right:10%;bottom:18%;height:18%;background:#090807;border:1px solid rgba(200,155,67,.22);box-shadow:0 -30px 60px rgba(255,169,62,.15)}
+.service{display:grid;grid-template-columns:1fr auto;gap:20px;padding:26px 0;border-bottom:1px solid var(--line)}
+.service h3{margin:0 0 8px;font-size:15px;text-transform:uppercase;color:#fff;letter-spacing:.22em}.service p{margin:0;color:var(--muted);line-height:1.6;font-size:14px}.price{color:var(--gold2);font-size:13px;white-space:nowrap}
+.form{max-width:700px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.input,.textarea,select{width:100%;background:#080806;border:1px solid rgba(200,155,67,.23);color:var(--cream);padding:16px;font-size:14px;outline:none}.textarea{grid-column:1/-1;min-height:120px}.form .btn{grid-column:1/-1}
+.features{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;border-top:1px solid var(--line);padding-top:45px}
+.feature{text-align:center;border-right:1px solid var(--line);padding:0 12px}.feature:last-child{border-right:none}.icon{font-size:34px;color:var(--gold2);margin-bottom:16px}.feature h3{font-size:13px;text-transform:uppercase;letter-spacing:.18em}
+.footer{padding:44px 7vw;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);font-size:12px}
+@media(max-width:900px){.nav-links{display:none}.menu{display:block}.nav{height:70px}.hero,.section{grid-template-columns:1fr;padding:110px 6vw 60px}.hero-v{min-height:320px;height:42vh;order:-1}.features{grid-template-columns:1fr 1fr}.form{grid-template-columns:1fr}.footer{flex-direction:column;gap:16px}}
